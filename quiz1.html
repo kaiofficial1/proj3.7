@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css"
+</head>
+<body>
+<div  class="header">
+    <h1>Quiz</h1>
+</div>
+<nav>
+    <ul>
+        <li><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+        <li><a>4</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <fieldset>
+                <legend>Size</legend>
+                <div class="Q1">
+                    <div>
+                        <input type="radio" id="q1" value="small">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" value="medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" value="large">
+                        <label for="large">Large</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="xl" value="xl">
+                        <label for="xl">EVEN LARGER</label>
+                    </div>
+                </div>
+            </fieldset>-
+            <button id="submit1">Submit</button>
+            <fieldset>
+                <legend>Size</legend>
+                <div class="content">
+                    <div>
+                        <input type="radio" id="small" value="small">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" value="medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" value="large">
+                        <label for="large">Large</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="xl" value="xl">
+                        <label for="xl">EVEN LARGER</label>
+                    </div>
+                </div>
+            </fieldset>
+            <button id="submit2">Submit</button>
+        </div>
+    </div>
+</div>
+<script>
+    const submit1 = document.querySelector('submit1');
+
+    submit1.addEventListener('click', function(e){
+        removeBGColor();
+        content.classList.add('red');
+    });
+</script>
+</body>
+</html>

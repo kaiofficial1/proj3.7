@@ -1,0 +1,37 @@
+body{
+    background-color: cornsilk;
+    color: rgba(6,3,5,0.74);
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    list-style: none;
+    background-color: black;
+    color: gold;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+    display:flex;
+}
+nav a, nav a:visited{
+    text-decoration: none;
+    width: 100%;
+    padding: 9px 0px;
+    color: gold;
+}
+nav a:hover {
+    color:gold;
+    background-color: grey;
+}
+nav a:hover, nav a.active{
+    color: gold;
+    background-color: grey;
+}
+.header{
+    text-align: center;
+}

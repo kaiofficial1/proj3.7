@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <h1>Mama Mia Pizzeria</h1>
+    <form>
+      <fieldset>
+        <legend>Customer:<</legend>
+        <div class="row">
+          <div>
+            <label for="firstname">First</label>
+            <input id="firstname" name="first_name" type="text">
+          </div>
+          <div>
+            <label for="lastname">Last</label>
+            <input id="lastname" name="last_name" type="text">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Size</legend>
+        <div>
+          <div>
+            <input type="radio" id="small" name="size">
+            <label for="small">Small</label>
+          </div>
+          <div>
+            <input type="radio" id="medium" name="size">
+            <label for="small">Medium</label>
+          </div>
+          <div>
+            <input type="radio" id="Large" name="size">
+            <label for="small">Large</label>
+          </div>
+          <div>
+            <input type="radio" id="xl" name="size">
+            <label for="small">EVEN LARGER</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Soda</legend>
+        <div>
+          <div>
+            <input type="radio" id="soda" name="soda">
+            <label for="soda">Rootbeer</label>
+          </div>
+          <div>
+            <input type="radio" id="soda" name="soda">
+            <label for="soda">Mtn Dew</label>
+          </div>
+          <div>
+            <input type="radio" id="soda" name="soda">
+            <label for="soda">Sprite</label>
+          </div>
+          <div>
+            <input type="radio" id="soda" name="soda">
+            <label for="soda">Fanta</label>
+            <div>
+              <input type="radio" id="soda" name="soda">
+              <label for="soda">Coke</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Toppings</legend>
+        <div class="toppings">
+          <div>
+            <input type="checkbox" id="Chicken" name="Chicken" value="Chicken">
+            <label for="Chicken">Chicken</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Pineapple" name="Pineapple" value="Pineapple">
+            <label for="Pineapple">Pineapple</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Bacon" name="Bacon" value="Bacon">
+            <label for="Bacon">Bacon</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Mushrooms" name="Mushrooms" value="Mushrooms">
+            <label for="Mushrooms">Mushrooms</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni">
+            <label for="Pepperoni">Pepperoni</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Sausage" name="Sausage" value="Sausage">
+            <label for="Sausage">Sausage</label>
+          </div>
+          <div>
+            <input type="checkbox" id="olives" name="olives" value="olives">
+            <label for="olives">Olives</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Sauce</legend>
+        <div>
+          <label for="sauce">Please Choose One</label>
+          <select name="sauce" id="sauce">
+            <option value="red">Red Sauce</option>
+            <option value="white">White Sauce</option>
+            <option value="garlic">Garlic Sauce</option>
+            <option value="bbq">Barbeque sauce</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Special Requests</legend>
+        <div>
+          <label for="SpecialRequests">Special Requests</label>
+          <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="Allergic to peanuts, substitutions, etc"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Delivery Adress</legend>
+        <div class="row">
+          <div>
+            <label for="line1">Adress Line 1</label>
+            <input id="line1" name="delivery_line" type="text">
+          </div>
+          <div>
+            <label for="zip">Zip Code</label>
+            <input id="zip" name="zip_code" type="text">
+          </div>
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone_number" type="text">
+        </div>
+      </fieldset>
+      <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+</div>
+</body>
+</html>
